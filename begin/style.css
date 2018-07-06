@@ -1,0 +1,14 @@
+.borde{
+  border: 1px #0041aa solid;
+}
+
+body{
+  background: #27D1C9;
+  text-align: center;
+}
+
+img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
