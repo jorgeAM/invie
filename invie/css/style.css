@@ -11,6 +11,19 @@ button{
   border: none;
 }
 
+.contacto a{
+  color: white;
+  text-decoration: none;
+}
+
+.contacto img{
+  display: block;
+}
+
+.contacto strong{
+  display: block;
+}
+
 .contenedor{
   width: 800px;
   margin: 0 auto;
@@ -22,6 +35,10 @@ button{
 
 .contenedor-guitarra-b{
   margin-left: 370px;
+}
+
+.footer{
+  background: #273b47;
 }
 
 .guitarras{
