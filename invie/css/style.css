@@ -8,6 +8,14 @@ body{
   margin: 0 auto;
 }
 
+.contenedor-guitarra-a{
+  padding-left: 20px;
+}
+
+.contenedor-guitarra-b{
+  margin-left: 370px;
+}
+
 .guitarras{
   color: #1F313C;
 }
@@ -17,7 +25,19 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 
+.guitarra{
+  margin: 10px;
+  padding: 10px;
+  overflow: auto;
+  border: 2px solid #1F313C;
+}
+
+.guitarra ol{
+  padding: 0;
+}
+
 .left{
+  /*ROMPE MODELO DE CAJA*/
   float: left;
 }
 
