@@ -3,6 +3,14 @@ body{
   margin: 0;
 }
 
+button{
+  border-radius: 8px;
+  background: #fd324e;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
 .contenedor{
   width: 800px;
   margin: 0 auto;
@@ -29,6 +37,7 @@ body{
   margin: 10px;
   padding: 10px;
   border: 2px solid #1F313C;
+  border-radius: 8px;
 }
 
 .guitarra ol{
