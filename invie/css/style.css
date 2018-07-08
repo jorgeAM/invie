@@ -1,5 +1,6 @@
 body{
   font-family: 'Allerta', sans-serif;
+  margin: 0;
 }
 
 .guitarras{
@@ -22,22 +23,32 @@ body{
 
 .menu li{
   display: inline-block;
+  margin-left: 30px;
 }
 
 .portada{
   background: url('../images/background.png');
   color: white;
+  padding: 20px;
+}
+
+.portada button{
+  margin-bottom: 70px;
 }
 
 .subtitulo{
   font-size: 24px;
+  margin-top: 0px;
 }
 
 .title-b{
   font-size: 50px;
+  margin-bottom: 20px;
 }
 
 .titulo{
   font-size: 70px;
   font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0;
+  margin-top: 70px;
 }
