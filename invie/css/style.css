@@ -28,7 +28,6 @@ body{
 .guitarra{
   margin: 10px;
   padding: 10px;
-  overflow: auto;
   border: 2px solid #1F313C;
 }
 
@@ -36,9 +35,15 @@ body{
   padding: 0;
 }
 
+.header{
+  position: relative;
+}
+
 .left{
   /*ROMPE MODELO DE CAJA*/
   float: left;
+  position: relative;
+  top: 80px;
 }
 
 .logo{
@@ -48,6 +53,9 @@ body{
 .menu{
   font-size: 24px;
   display: inline-block;
+  /*SE SUGIERA COLOCAR POSITION RELATIVA AL PADRE*/
+  position: absolute;
+  right: 0;
 }
 
 .menu li{
@@ -67,6 +75,8 @@ body{
 
 .right{
   float: right;
+  position: relative;
+  bottom: 126px;
 }
 
 .subtitulo{
