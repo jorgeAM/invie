@@ -11,9 +11,16 @@ button{
   border: none;
 }
 
+.contacto{
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+}
+
 .contacto a{
   color: white;
   text-decoration: none;
+  margin: 12px 12px 12px 0;
 }
 
 .contacto img{
@@ -39,6 +46,11 @@ button{
 
 .footer{
   background: #273b47;
+}
+
+.footer .contenedor{
+  display: flex;
+  justify-content: space-between;
 }
 
 .formulario{
