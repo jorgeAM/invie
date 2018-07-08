@@ -17,6 +17,10 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 
+.left{
+  float: left;
+}
+
 .logo{
   display: inline-block;
 }
@@ -39,6 +43,10 @@ body{
 
 .portada button{
   margin-bottom: 70px;
+}
+
+.right{
+  float: right;
 }
 
 .subtitulo{
