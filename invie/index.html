@@ -69,9 +69,43 @@
             <span>jorge.alfmur@gmail.com</span>
           </a>
         </div>
-        <div class="formulario">
-          formulario
-        </div>
+        <form class="formulario">
+          <label for="name">Nombre</label>
+          <input type="text" name="name" id="name" required/>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required/>
+          <div class="sex">
+            <label for="mujer">
+              <input type="radio" id="mujer" name="sex" value="mujer"/>Mujer
+            </label>
+            <label for="hombre">
+              <input type="radio" id="hombre" name="sex" value="hombre"/>Hombre
+            </label>
+          </div>
+          <div class="intereses">
+            <label>
+              <input type="checkbox" id="cotización" value="cotización">
+              Cotización
+            </label>
+            <label>
+              <input type="checkbox" id="reclamos" value="reclamos">
+              Reclamos
+            </label>
+            <label>
+              <input type="checkbox" id="comentarios" value="comentarios">
+              Comentarios
+            </label>
+            <label>
+              <input type="checkbox" id="otros" value="otros">
+              Otros
+            </label>
+          </div>
+          <div>
+            <label for="asunto">Asunto</label>
+            <textarea name="asunto" rows="4" cols="25"></textarea>
+          </div>
+          <input type="submit" value="Enviar"/>
+        </form>
       </div>
     </footer>
   </body>
