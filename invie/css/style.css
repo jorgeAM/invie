@@ -3,6 +3,26 @@ body{
   margin: 0;
 }
 
+table{
+  width: 100%;
+}
+
+th{
+  background: #273b47;
+  color: white;
+  padding: 10px;
+}
+
+td{
+  padding: 20px;
+  text-align: center;
+}
+
+table, th, td{
+  border: 1px solid #273b47;
+  border-collapse: collapse;
+}
+
 .button{
   border-radius: 8px;
   background: #fd324e;
@@ -100,6 +120,10 @@ body{
 
 .header{
   position: relative;
+}
+
+.header a{
+  text-decoration: none;
 }
 
 .intereses label{

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Invie - Precios</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header id="header" class="header contenedor">
+      <!-- logo -->
+      <figure class="logo">
+        <img src="images/invie.png" alt="logo" width="180" height="60">
+      </figure>
+      <!-- navegacion -->
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="precios.html">Precios</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="tabla">
+      <div class="contenedor">
+        <table>
+          <thead>
+            <tr>
+              <th>Modelo</th>
+              <th>Precio</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Invie Classic</td>
+              <td>$100000</td>
+              <td>
+                Una guitarra PRO.
+              </td>
+            </tr>
+            <tr>
+              <td>Invie Acústica</td>
+              <td>$100000</td>
+              <td>
+                Una guitarra PRO.
+              </td>
+            </tr>
+            <tr>
+              <td>Invie Classic</td>
+              <td>$100000</td>
+              <td>
+                Una guitarra PRO.
+              </td>
+            </tr>
+         </tbody>
+        </table>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="contenedor">
+        <div class="contacto">
+          <img src="./images/invie-white.png" alt="logo"/>
+          <!-- tel: para indicar al SO que es un telefono-->
+          <a href="tel:+51929143321">
+            <strong>Teléfono</strong>
+            <span>929143321</span>
+          </a>
+          <a href="mailto:jorge@gmail.com">
+            <strong>Email</strong>
+            <span>example@gmail.com</span>
+          </a>
+        </div>
+        <form class="formulario">
+          <div class="col1">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" required/>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required/>
+            <div class="sex">
+              <label for="mujer">
+                <input type="radio" id="mujer" name="sex" value="mujer"/>Mujer
+              </label>
+              <label for="hombre">
+                <input type="radio" id="hombre" name="sex" value="hombre"/>Hombre
+              </label>
+            </div>
+            <div class="intereses">
+              <label>
+                <input type="checkbox" id="cotización" value="cotización">
+                Cotización
+              </label>
+              <label>
+                <input type="checkbox" id="reclamos" value="reclamos">
+                Reclamos
+              </label>
+              <label>
+                <input type="checkbox" id="comentarios" value="comentarios">
+                Comentarios
+              </label>
+              <label>
+                <input type="checkbox" id="otros" value="otros">
+                Otros
+              </label>
+            </div>
+          </div>
+          <div class="col2">
+            <label for="asunto">Asunto</label>
+            <textarea name="asunto" rows="4" cols="25"></textarea>
+            <input class="button" type="submit" value="Enviar"/>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
