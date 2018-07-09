@@ -23,12 +23,20 @@ table, th, td{
   border-collapse: collapse;
 }
 
+.b{
+  height: 180px;
+}
+
 .button{
-  border-radius: 8px;
+  border-radius: 12px;
+  border: none;
   background: #fd324e;
   color: white;
-  padding: 10px;
-  border: none;
+  cursor: pointer;
+  padding: 10px 12px;
+  font-size: 18px;
+  text-decoration: none;
+  background: linear-gradient(to left, #fe344e, #ff7250);
 }
 
 .col1, .col2{
@@ -42,6 +50,10 @@ table, th, td{
 
 .col2{
   align-items: flex-end;
+}
+
+.col2 .button{
+  margin-top: 15px;
 }
 
 .contacto{
@@ -76,10 +88,13 @@ table, th, td{
 
 .contenedor-guitarra-b{
   margin-left: 370px;
+  position: relative;
+  bottom: 90px;
 }
 
 .footer{
   background: #273b47;
+  padding: 50px 10px;
 }
 
 .footer .contenedor{
@@ -91,7 +106,6 @@ table, th, td{
   color: white;
   display: flex;
   width: 400px;
-  padding: 50px 10px;
 }
 
 .formulario label, .sex, .intereses{
@@ -100,6 +114,7 @@ table, th, td{
 
 .guitarras{
   color: #1F313C;
+  margin-bottom: 60px;
 }
 
 .guitarras h2{
@@ -108,7 +123,7 @@ table, th, td{
 }
 
 .guitarra{
-  margin: 10px;
+  margin: 10px 10px 40px 10px;
   padding: 10px;
   border: 2px solid #1F313C;
   border-radius: 8px;
@@ -130,15 +145,20 @@ table, th, td{
   font-size: 10px;
 }
 
+.invie{
+  text-decoration: underline;
+}
+
 .left{
   /*ROMPE MODELO DE CAJA*/
   float: left;
   position: relative;
-  top: 80px;
+  bottom: 12px;
 }
 
 .logo{
   display: inline-block;
+  margin: 0;
 }
 
 .menu{
@@ -149,6 +169,11 @@ table, th, td{
   right: 0;
 }
 
+.menu a{
+  color: white;
+  text-decoration: none;
+}
+
 .menu li{
   display: inline-block;
   margin-left: 30px;
@@ -156,8 +181,14 @@ table, th, td{
 
 .portada{
   background: url('../images/background.png');
+  background-size: cover;
   color: white;
   padding: 20px;
+  /*height: 500px;*/
+}
+
+.portada-height{
+  height: 500px;
 }
 
 .portada button{
@@ -181,6 +212,10 @@ table, th, td{
 .title-b{
   font-size: 50px;
   margin-bottom: 20px;
+}
+
+.tabla{
+  margin: 75px;
 }
 
 .titulo{
