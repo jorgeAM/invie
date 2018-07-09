@@ -3,7 +3,7 @@ body{
   margin: 0;
 }
 
-button{
+.button{
   border-radius: 8px;
   background: #fd324e;
   color: white;
@@ -11,10 +11,24 @@ button{
   border: none;
 }
 
+.col1, .col2{
+  display: flex;
+  flex-direction: column;
+}
+
+.col1{
+  margin-right: 15px;
+}
+
+.col2{
+  align-items: flex-end;
+}
+
 .contacto{
   display: flex;
   width: 300px;
   flex-wrap: wrap;
+  align-items: flex-end;
 }
 
 .contacto a{
@@ -55,6 +69,13 @@ button{
 
 .formulario{
   color: white;
+  display: flex;
+  width: 400px;
+  padding: 50px 10px;
+}
+
+.formulario label, .sex, .intereses{
+  margin-bottom: 10px;
 }
 
 .guitarras{
@@ -79,6 +100,10 @@ button{
 
 .header{
   position: relative;
+}
+
+.intereses label{
+  font-size: 10px;
 }
 
 .left{
@@ -119,6 +144,9 @@ button{
   float: right;
   position: relative;
   bottom: 126px;
+}
+.sex{
+  margin-top: 10px;
 }
 
 .subtitulo{
