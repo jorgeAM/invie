@@ -78,7 +78,7 @@ table, th, td{
 }
 
 .contenedor{
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -226,9 +226,42 @@ table, th, td{
 }
 
 @media screen and (max-width: 800px) {
-  body{
-    background: peru;
-    border: 15px solid lightblue;
+  .titulo{
+    font-size: 45px;
+    margin-top: 30px;
   }
 
+  .subtitulo{
+    font-size: 18px;
+  }
+
+  .portada{
+    height: auto;
+  }
+
+  .guitarras{
+    text-align: center;
+  }
+
+  .guitarra.b{
+    height: auto;
+  }
+
+  .guitarra li{
+    list-style: none;
+  }
+
+  .right, .left{
+    float: none;
+    position: static;
+  }
+
+  .title-b{
+    margin: 10px 15px;
+  }
+
+  .contenedor-guitarra-b{
+    position: static;
+    margin: 0;
+  }
 }
