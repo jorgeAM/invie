@@ -28,12 +28,15 @@
 .icon-phone:before {
   content: "\e942";
 }
+
 .icon-envelop:before {
   content: "\e945";
 }
+
 .icon-menu:before {
   content: "\e9bd";
 }
+
 .icon-close:before {
   content: "\ea0d";
 }
@@ -266,6 +269,20 @@ table, th, td{
   margin-top: 70px;
 }
 
+.burger-button{
+  width: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  height: 40px;
+  background: #395667;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 @media screen and (max-width: 800px) {
   .titulo{
     font-size: 45px;
@@ -386,6 +403,23 @@ table, th, td{
     text-align: center;
   }
 
+  .portada .contenedor{
+    position: static;
+  }
+
+  .menu{
+    background: rgba(255, 60, 88, .8);
+    position: absolute;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
   .menu li{
     display: block;
     margin: 0;
@@ -395,6 +429,10 @@ table, th, td{
 
   .menu li:first-child{
     border-top: 1px solid white;
+  }
+
+  .menu ul{
+    flex: 1;
   }
 
   .titulo, .subtitulo{
