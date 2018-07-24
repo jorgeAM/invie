@@ -39,7 +39,7 @@
       <!-- guitarras -->
       <h2>Nuestras Guitarras</h2>
       <article class="guitarra">
-        <img class="right" src="images/invie-acustica.png" alt="guitarra1" width="350"/>
+        <img class="right" data-src="images/invie-acustica.png" alt="guitarra1" width="350"/>
         <div class="contenedor-guitarra-a">
           <h3 class="title-b">Invie Acústica</h3>
           <ol>
@@ -50,7 +50,7 @@
         </div>
       </article>
       <article class="guitarra b">
-        <img class="left" src="images/invie-classic.png" alt="guitarra2" width="350"/>
+        <img class="left" data-src="images/invie-classic.png" alt="guitarra2" width="350"/>
         <div class="contenedor-guitarra-b">
           <h3 class="title-b">Invie Classic</h3>
           <ol>
@@ -64,7 +64,7 @@
     <footer class="footer">
       <div class="contenedor">
         <div class="contacto">
-          <img src="./images/invie-white.png" alt="logo"/>
+          <img data-src="./images/invie-white.png" alt="logo"/>
           <!-- tel: para indicar al SO que es un telefono-->
           <a href="tel:+51929143321">
             <strong>Teléfono</strong>
@@ -116,6 +116,7 @@
         </form>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
     <script type="text/javascript">
       var consulta = window.matchMedia('(max-width: 500px)');
       var burger = document.getElementById('burger');
@@ -138,6 +139,10 @@
           burger.removeEventListener('touchstart', toggleMenu);
         }
       }
+
+      var bLazy = new Blazy({
+        selector: 'img',
+      });
     </script>
   </body>
 </html>
