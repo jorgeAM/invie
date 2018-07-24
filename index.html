@@ -18,8 +18,8 @@
           <img src="images/invie.png" alt="logo" width="180" height="60">
         </figure>
         <!-- navegacion -->
-        <span class="burger-button icon-menu"></span>
-        <nav class="menu">
+        <span id="burger" class="burger-button icon-menu"></span>
+        <nav class="menu" id="menu">
           <ul>
             <li><a href="index.html">&compfn; Home</a></li>
             <li><a href="#guitarras">&compfn;Precios</a></li>
@@ -115,5 +115,13 @@
         </form>
       </div>
     </footer>
+    <script type="text/javascript">
+      var burger = document.getElementById('burger');
+      var menu = document.getElementById('menu');
+      burger.addEventListener('touchstart', () => {
+        menu.classList.toggle('active');
+        burger.classList.toggle('icon-close');
+      });
+    </script>
   </body>
 </html>

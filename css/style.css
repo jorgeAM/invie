@@ -279,8 +279,9 @@ table, th, td{
   display: inline-block;
   cursor: pointer;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 20px;
+  top: 20px;
+  z-index: 3;
 }
 
 @media screen and (max-width: 800px) {
@@ -418,6 +419,11 @@ table, th, td{
     display: flex;
     align-items: center;
     width: 100%;
+    transition: .3s;
+  }
+
+  .menu.active{
+    left: 0;
   }
 
   .menu li{
