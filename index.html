@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user_scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--
     <link rel="stylesheet" media="(max-width: 800px)"  href="./css/media-querie.css">
     -->
@@ -117,12 +117,27 @@
       </div>
     </footer>
     <script type="text/javascript">
+      var consulta = window.matchMedia('(max-width: 500px)');
       var burger = document.getElementById('burger');
       var menu = document.getElementById('menu');
-      burger.addEventListener('touchstart', () => {
+      consulta.addListener(mediaQuery);
+
+      window.onload = function () {
+        mediaQuery();
+      };
+
+      function toggleMenu() {
         menu.classList.toggle('active');
         burger.classList.toggle('icon-close');
-      });
+      }
+
+      function mediaQuery() {
+        if (consulta.matches) {
+          burger.addEventListener('touchstart', toggleMenu);
+        }else {
+          burger.removeEventListener('touchstart', toggleMenu);
+        }
+      }
     </script>
   </body>
 </html>
