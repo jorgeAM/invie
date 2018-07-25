@@ -331,6 +331,10 @@ table, th, td{
     position: static;
     margin: 0;
   }
+
+  .tabla .contenedor{
+    overflow: auto;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -413,6 +417,14 @@ table, th, td{
   }
 
   .portada .contenedor{
+    position: static;
+  }
+
+  .header{
+    position: static;
+  }
+
+  .header .contenedor{
     position: static;
   }
 

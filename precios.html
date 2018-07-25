@@ -16,7 +16,8 @@
           <img src="images/invie.png" alt="logo" width="180" height="60">
         </figure>
         <!-- navegacion -->
-        <nav class="menu">
+        <span id="burger" class="burger-button icon-menu"></span>
+        <nav id="menu" class="menu">
           <ul>
             <li><a href="index.html">&compfn; Home</a></li>
             <li><a href="precios.html">&compfn; Precios</a></li>
@@ -115,5 +116,28 @@
         </form>
       </div>
     </footer>
+    <script type="text/javascript">
+      var consulta = window.matchMedia('(max-width: 500px)');
+      var burger = document.getElementById('burger');
+      var menu = document.getElementById('menu');
+      consulta.addListener(mediaQuery);
+
+      window.onload = function () {
+        mediaQuery();
+      };
+
+      function toggleMenu() {
+        menu.classList.toggle('active');
+        burger.classList.toggle('icon-close');
+      }
+
+      function mediaQuery() {
+        if (consulta.matches) {
+          burger.addEventListener('touchstart', toggleMenu);
+        }else {
+          burger.removeEventListener('touchstart', toggleMenu);
+        }
+      }
+    </script>
   </body>
 </html>
